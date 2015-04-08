@@ -46,6 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201504081245374_InitialCreate.cs" />
+    <Compile Include="Migrations\201504081245374_InitialCreate.Designer.cs">
+      <DependentUpon>201504081245374_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504081257509_Title type int to string.cs" />
+    <Compile Include="Migrations\201504081257509_Title type int to string.Designer.cs">
+      <DependentUpon>201504081257509_Title type int to string.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504081316268_Add person table.cs" />
+    <Compile Include="Migrations\201504081316268_Add person table.Designer.cs">
+      <DependentUpon>201504081316268_Add person table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504081317450_Add person table id to blog table.cs" />
+    <Compile Include="Migrations\201504081317450_Add person table id to blog table.Designer.cs">
+      <DependentUpon>201504081317450_Add person table id to blog table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\CFDemoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +72,20 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504081245374_InitialCreate.resx">
+      <DependentUpon>201504081245374_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504081257509_Title type int to string.resx">
+      <DependentUpon>201504081257509_Title type int to string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504081316268_Add person table.resx">
+      <DependentUpon>201504081316268_Add person table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504081317450_Add person table id to blog table.resx">
+      <DependentUpon>201504081317450_Add person table id to blog table.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

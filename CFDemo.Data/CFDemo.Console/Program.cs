@@ -13,9 +13,10 @@ namespace CFDemo.Console
         {
             var db = new CFDemoContext();
             System.Console.WriteLine("Naplók");
-            foreach (var blog in db.Blogs.ToList())
+            foreach (var blog in db.Blogs
+                                   .ToList())
             {
-                System.Console.WriteLine(string.Format("{0}: {1}", blog.BloggerName, blog.Title));
+                System.Console.WriteLine(string.Format("{0}: {1}", blog.Blogger.Name, blog.Title));
             }
             System.Console.WriteLine("Naplók vége");
             System.Console.ReadLine();

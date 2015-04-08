@@ -9,8 +9,16 @@ namespace CFDemo.Data.Models
     public class Blog
     {
         public int Id { get; set; }
-        public int Title { get; set; }
-        public string BloggerName  { get; set; }
+        public string Title { get; set; }
+        public int BloggerId { get; set; }
+        public virtual Person Blogger { get; set; }
+    }
+
+    public class Person
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
         public string Address { get; set; }
     }
+
 }
