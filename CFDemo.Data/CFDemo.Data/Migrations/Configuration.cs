@@ -2,6 +2,7 @@ namespace CFDemo.Data.Migrations
 {
     using CFDemo.Data.Models;
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -16,11 +17,14 @@ namespace CFDemo.Data.Migrations
 
         protected override void Seed(CFDemo.Data.Models.CFDemoContext context)
         {
-            context.Blogs.AddOrUpdate(new Blog {Id=1, Title = "Title1", Blogger=new Person { Id = 1, Name="Blogger1", Address="Address1" }});
-            context.Blogs.AddOrUpdate(new Blog { Id = 1, Title = "Title1", Blogger = new Person { Id = 1, Name = "Blogger2", Address = "Address2" } });
-
-
-
+            context.Persons.AddOrUpdate(new Person
+                {
+                    Id = 1,
+                    Name = "Blogger1",
+                    Address = new Address {City="Budapest", Number="2/B", Street="Nagyfa utca", Zip=1000 },
+                    Blogs = new List<Blog>() {new Blog { BloggerId=1, Title="Blog1"},new Blog { BloggerId=1, Title="Blog2"}}
+                }
+            );
             context.SaveChanges();
         }
     }

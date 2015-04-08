@@ -18,7 +18,16 @@ namespace CFDemo.Data.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
+        public Address Address { get; set; }
+        public virtual ICollection<Blog> Blogs { get; set; }
+    }
+
+    public class Address
+    {
+        public int Zip { get; set; }
+        public string City { get; set; }
+        public string Street { get; set; }
+        public string Number { get; set; }
     }
 
 }

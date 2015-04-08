@@ -17,5 +17,12 @@ namespace CFDemo.Data.Models
         public CFDemoContext() : base("DefaultConnection") {}
             
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Person> Persons { get; set; }
+
+        public override int SaveChanges()
+        {
+
+            return base.SaveChanges();
+        }
     }
 }
