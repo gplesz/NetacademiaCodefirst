@@ -11,7 +11,8 @@ namespace CFDemo.Data.Models
     {
         static CFDemoContext()
         {
-            Database.SetInitializer<CFDemoContext>(new DropCreateDatabaseIfModelChanges<CFDemoContext>());
+            //Database.SetInitializer<CFDemoContext>(new DropCreateDatabaseIfModelChanges<CFDemoContext>());
+            Database.SetInitializer<CFDemoContext>(null);
         }
 
         public CFDemoContext() : base("DefaultConnection") {}

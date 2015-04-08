@@ -70,6 +70,18 @@
     <Compile Include="Migrations\201504081335266_Add blogs reference to person.Designer.cs">
       <DependentUpon>201504081335266_Add blogs reference to person.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504081346454_rename blogs table to naplok.cs" />
+    <Compile Include="Migrations\201504081346454_rename blogs table to naplok.Designer.cs">
+      <DependentUpon>201504081346454_rename blogs table to naplok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504081349487_rename Blog.Id to Azonosito.cs" />
+    <Compile Include="Migrations\201504081349487_rename Blog.Id to Azonosito.Designer.cs">
+      <DependentUpon>201504081349487_rename Blog.Id to Azonosito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504081359362_refactoring.cs" />
+    <Compile Include="Migrations\201504081359362_refactoring.Designer.cs">
+      <DependentUpon>201504081359362_refactoring.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\CFDemoContext.cs" />
@@ -99,6 +111,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504081335266_Add blogs reference to person.resx">
       <DependentUpon>201504081335266_Add blogs reference to person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504081346454_rename blogs table to naplok.resx">
+      <DependentUpon>201504081346454_rename blogs table to naplok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504081349487_rename Blog.Id to Azonosito.resx">
+      <DependentUpon>201504081349487_rename Blog.Id to Azonosito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504081359362_refactoring.resx">
+      <DependentUpon>201504081359362_refactoring.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

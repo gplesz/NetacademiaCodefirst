@@ -17,15 +17,15 @@ namespace CFDemo.Data.Migrations
 
         protected override void Seed(CFDemo.Data.Models.CFDemoContext context)
         {
-            context.Persons.AddOrUpdate(new Person
-                {
-                    Id = 1,
-                    Name = "Blogger1",
-                    Address = new Address {City="Budapest", Number="2/B", Street="Nagyfa utca", Zip=1000 },
-                    Blogs = new List<Blog>() {new Blog { BloggerId=1, Title="Blog1"},new Blog { BloggerId=1, Title="Blog2"}}
-                }
-            );
-            context.SaveChanges();
+            //context.Persons.AddOrUpdate(new Person
+            //    {
+            //        Id = 1,
+            //        Name = "Blogger1",
+            //        Address = new Address {City="Budapest", Number="2/B", Street="Nagyfa utca", Zip=1000 },
+            //        Blogs = new List<Blog>() {new Blog { BloggerId=1, Title="Blog1"},new Blog { BloggerId=1, Title="Blog2"}}
+            //    }
+            //);
+            //context.SaveChanges();
         }
     }
 }
